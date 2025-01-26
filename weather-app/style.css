@@ -1,0 +1,184 @@
+/* Colors */
+
+:root {
+    --app-background-color: #222;
+    --card-background-color: linear-gradient(135deg, #00feba, #5b548a);
+    --card-text-color: #fff;
+    --input-and-button-background-color: #ebfffc;
+}
+
+/* Default settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    background: var(--app-background-color);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.6rem;
+    transition: 0.5s;
+}
+
+/* Card */
+
+@keyframes Card {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: var(--card-background-color);
+    color: var(--card-text-color);
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    animation-name: Card;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+
+}
+
+/* Search element */
+
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .search input {
+            border: 0;
+            outline: 0;
+            background: var(--input-and-button-background-color);
+            color: #555;
+            padding: 10px 25px;
+            height: 60px;
+            border-radius: 30px;
+            flex: 1;
+            margin-right: 16px;
+            font-size: 1.8rem;
+        }
+        
+        .search button {
+            border: 0;
+            outline: 0;
+            background: var(--input-and-button-background-color);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .search button:hover {
+            opacity: 0.90;
+        }
+
+            .search button img {
+                width: 18px;
+            }
+
+/* Error element */
+
+    @keyframes Error {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .error {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 1.4rem;
+        margin-top: 10px;
+        display: none;
+        animation-name: Error;
+        animation-duration: 1s;
+        animation-iteration-count: inherit;
+    }
+
+/* Weather element */
+
+    @keyframes WeaterOpen {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .weather {
+        display: none;
+        animation-name: WeaterOpen;
+        animation-duration: 1s;
+        animation-iteration-count: inherit;
+    }
+
+        .weather-icon {
+        width: 170px;  
+        margin-top: 30px;
+
+        }
+
+        .weather h1 {
+            font-size: 8rem;
+            font-weight: 500;
+        }
+
+        .weather h2 {
+            font-size: 4.5rem;
+            font-weight: 300;
+            margin-top: -10px;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            margin-top: 50px;
+        }
+
+            .col {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                font-size: 1.6rem;
+            }
+
+                .col img{
+                    width: 40px;
+                    margin-right: 10px;
+                }
+
+                .humidity,
+                .wind {
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    margin-top: -6px;
+                }
