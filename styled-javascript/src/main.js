@@ -1,3 +1,4 @@
+// @ts-check
 import Executor from "./control/executor.js";
 import InfoController from "./control/info-controller.js";
 import MainController from "./control/main-controller.js";
@@ -15,10 +16,7 @@ console.log(repository.getItems());
 let executor = new Executor();
 executor.defineModule("main", new MainController(repository));
 executor.defineModule("info", new InfoController(repository));
-executor.launch("main");
+// executor.launch("main");
 
-// let firstId = repository.getItems()[0].id;
-// executor.launch("info", firstId);
-
-let controller = new MainController(repository);
-controller.main();
+let firstId = repository.getItems()[0].id;
+executor.launch("info", firstId);

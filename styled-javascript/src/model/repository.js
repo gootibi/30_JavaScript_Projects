@@ -1,20 +1,39 @@
+// @ts-check
+import Entity from "./entity.js";
+
 export default class Repository {
+    /**
+     * @type {Entity[]}
+     */
     #data = [];
 
+    /**
+     * @param {Entity} item 
+     */
     addItem(item) {
-        //Items need ID !!!
+        item.id = this.#generateId();
         this.#data.push(item);
     };
 
+    /**
+     * @returns {Entity[]}
+     */
     getItems() {
         return this.#data;
     };
 
+    /**
+     * @param {number} id 
+     * @returns {Entity|undefined}
+     */
     getItemById(id) {
-        return this.#data.find((item) => true /* if meets Items ID */);
+        return this.#data.find((item) => item.id == id);
     };
 
+    /**
+     * @returns {number}
+     */
     #generateId() {
-        return this.#data.length * 100 + parseInt(Math.random() * 100);
+        return this.#data.length * 100 + Math.floor(Math.random() * 100);
     };
 };
