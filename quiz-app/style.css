@@ -1,0 +1,166 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --text-color: #222;
+  --body-color: #001e4d;
+  --title-color: #001e4d;
+  --app-bg-color: #fff;
+  --btn-bg-color: #fff;
+  --btn-hover-bg-color: #222;
+  --btn-hover-text-color: #fff;
+  --btn-next-bg-color: #001e4d;
+  --btn-next-text-color: #fff;
+
+  /*========== Font family ==========*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Montserrat Alternates", sans-serif;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 8.8rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.8rem;
+  --larger-font-size: 2rem;
+  --large-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.4rem;
+  --smaller-font-size: 1.3rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  /*========== Transition ==========*/
+  --transition: all 0.3s ease-in-out;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1024px) {
+}
+
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input,
+textarea {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/*=============== LAYOUT ===============*/
+
+.app {
+  background-color: var(--app-bg-color);
+  width: 90%;
+  max-width: 60rem;
+  margin: 10rem auto 0;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.app h1 {
+  font-size: var(--h1-font-size);
+  border-bottom: 0.1rem solid #333;
+  padding-bottom: 3rem;
+}
+
+.quiz {
+  padding: 2rem 0;
+}
+
+.quiz h2 {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  font-weight: var(--font-medium);
+  width: 100%;
+  border: 0.1rem solid #222;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: left;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover:not([disabled]) {
+  background-color: var(--btn-hover-bg-color);
+  color: var(--btn-hover-text-color);
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background-color: var(--btn-next-bg-color);
+  color: var(--btn-next-text-color);
+  font-weight: var(--font-medium);
+  width: 15rem;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background-color: #ff9393;
+}
