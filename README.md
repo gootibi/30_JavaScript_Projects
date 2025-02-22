@@ -8,6 +8,7 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 4. Quiz app
 5. Random Password Generator app
 6. Notes app
+7. Age Calculator app
 
 
 Thank You and Have Fun!
