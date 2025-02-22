@@ -1,0 +1,173 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --text-color: #222;
+  --body-color: #fff;
+  --title-color: #fff;
+  --container-bg-color: linear-gradient(135deg, #cf9aff, #95c0ff);
+  --container-text-color: #fff;
+  --button-bg-color: linear-gradient(#9418fd, #571094);
+  --button-bg-hover-color: linear-gradient(#9218fde7, #561094e5);
+  --button-text-color: #fff;
+  --input-box-bg-color: #fff;
+  --input-box-text-color: #333;
+
+  /*========== Font family ==========*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Montserrat Alternates", sans-serif;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 8.8rem;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 2.6rem;
+  --larger-font-size: 2rem;
+  --large-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.4rem;
+  --smaller-font-size: 1.3rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  /*========== Transition ==========*/
+  --transition: all 0.3s ease-in-out;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1024px) {
+}
+
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input,
+textarea {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/*=============== LAYOUT ===============*/
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--container-bg-color);
+  color: var(--container-text-color);
+  padding-top: 4%;
+  padding-left: 10%;
+}
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.container h1 img {
+  width: 6rem;
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  background: var(--button-bg-color);
+  color: var(--button-text-color);
+  font-size: var(--normal-font-size);
+  border-radius: 4rem;
+  padding: 1.5rem 2.5rem;
+  margin: 3rem 0 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.container button:hover {
+  -webkit-box-shadow: 0px 0px 20px -1px rgba(87, 16, 148, 1);
+  -moz-box-shadow: 0px 0px 20px -1px rgba(87, 16, 148, 1);
+  box-shadow: 0px 0px 20px -1px rgba(87, 16, 148, 1);
+}
+
+.container button img {
+  width: 2.5rem;
+  margin-right: 0.8rem;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  min-height: 15rem;
+  background-color: var(--input-box-bg-color);
+  color: var(--input-box-text-color);
+  padding: 2rem;
+  margin: 2rem 0;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.input-box img {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.input-box img:hover {
+  transform: scale(1.2, 1.2);
+}

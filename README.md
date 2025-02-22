@@ -7,6 +7,7 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 3. Styled Javascript Basic app
 4. Quiz app
 5. Random Password Generator app
+6. Notes app
 
 
 Thank You and Have Fun!
