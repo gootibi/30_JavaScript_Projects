@@ -10,6 +10,9 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 6. Notes app
 7. Age Calculator app
 8. Notes 2.0 app
+9. Drag and Drop Element app
+10. Drag and Drop File app
+11. Kanban Board app
 
 
 Thank You and Have Fun!
