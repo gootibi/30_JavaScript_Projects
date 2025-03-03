@@ -1,0 +1,142 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --text-color: #222;
+  --body-color: #fff;
+  --title-color: #222;
+  --poll-option-fill-bg-color: #ddd;
+  --poll-option-selecte-bg-color: #009578;
+
+  /*========== Font family ==========*/
+  --body-font: "Montserrat Alternates", sans-serif;
+
+  /*========== Font sizes ==========*/
+  --big-font-size: 8.8rem;
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 2rem;
+  --larger-font-size: 2.4rem;
+  --large-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.4rem;
+  --smaller-font-size: 1.3rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+
+  /*========== Transition ==========*/
+  --transition-button: background 0.3s;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1024px) {
+}
+
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input,
+textarea {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/*=============== LAYOUT ===============*/
+
+.poll {
+  width: 40rem;
+  padding: 2.4rem;
+  margin: 5rem;
+  font-family: var(--body-font);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+.poll__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 2.4rem;
+}
+
+.poll__option {
+  cursor: pointer;
+}
+
+.poll__option:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.poll__option--selected .poll__option-fill {
+  background-color: var(--poll-option-selecte-bg-color);
+}
+
+.poll__option--selected .poll__option-info {
+  font-weight: var(--font-bold);
+}
+
+.poll__option-fill {
+  width: 50%;
+  height: 1rem;
+  background-color: var(--poll-option-fill-bg-color);
+}
+
+.poll__option-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.36rem;
+  padding: 0.8rem 0;
+}
