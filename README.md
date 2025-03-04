@@ -15,6 +15,7 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 11. Kanban Board app
 12. Workout Tracker app
 13. Budget Tracker app
+14. Styled Table with Web Components app
 
 
 Thank You and Have Fun!
