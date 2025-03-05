@@ -18,6 +18,7 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 14. Styled Table with Web Components app
 15. Progress Bar with Web Components app
 16. Buttons with Web Components app
+17. Search Bar with Web Components app
 
 
 Thank You and Have Fun!

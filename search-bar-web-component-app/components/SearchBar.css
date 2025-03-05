@@ -1,0 +1,29 @@
+:host {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.875rem;
+  border-radius: 1.5rem;
+  background-color: #f6f6f6;
+  transition: background-color 0.25s;
+}
+
+:host(:focus-within) {
+  background-color: #f1f1f1;
+}
+
+.input {
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 18.75rem;
+}
+
+.input::placeholder,
+.icon {
+  color: rgba(0, 0, 0, 0.5);
+}
