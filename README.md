@@ -20,6 +20,7 @@ Creating simple and short HTML, CSS, and JavaScript web app.
 16. Buttons with Web Components app
 17. Search Bar with Web Components app
 18. Counter with Web Components app
+19. Single Page app
 
 
 Thank You and Have Fun!
